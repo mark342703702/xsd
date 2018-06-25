@@ -6,10 +6,8 @@ Page({
       longitude: 104.718796,
       scale: 16,
       markers: [{
-        latitude: 31.462964,
-        longitude: 104.717652
+        latitude: 31.457650,
+        longitude: 104.711610
       }]
-      
   }
-
 })
