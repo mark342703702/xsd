@@ -1,0 +1,61 @@
+<view class="container">
+  <view class="ad">
+     <swiper class="swiper" autoplay='true' interval="5000" indicator-dots='true' indicator-active-color='#fff'>
+        <block wx:for="{{imgUrls}}" wx:key="id">
+          <swiper-item>
+            <navigator url="{{item.link}}" class="widget">
+              <image src="{{item.pic}}" class="slide-image"/>
+            </navigator>
+          </swiper-item>
+        </block>
+     </swiper>
+  </view>
+  <view class='title'>
+      <text class='head'>新品到着</text>
+      <text class='sub_head'>NEW ARRIVALS</text>
+  </view>
+  <view class='news'>
+    <scroll-view class='news_content' scroll-x>
+      <block wx:for="{{newsUrls}}" wx:key="news">
+      <view class='news_item'>
+          <image src="{{item.pic}}" class="news-image"/>
+      </view>
+      </block>
+    </scroll-view>
+  </view>
+  <view class='title'>
+      <text class='head'>热卖单品</text>
+      <text class='sub_head'>HOT SALE</text>
+  </view>
+  <view class='hot'>
+      <view class='column'>
+        <view class='hot_item'>
+          <image src="../../img/sale1.jpg" class="hot_image" style='margin-right:10rpx'/>
+        </view>
+        <view class='hot_item'>
+          <image src="../../img/sale2.jpg" class="hot_image"/>
+        </view>
+      </view>
+      <view class='column'>
+        <view class='hot_item'>
+          <image src="../../img/sale3.jpg" class="hot_image" style='margin-right:10rpx'/>
+        </view>
+        <view class='hot_item'>
+          <image src="../../img/sale4.jpg" class="hot_image"/>
+        </view>
+      </view>
+  </view>
+  <view class='title'>
+      <text class='head'>夏日促销</text>
+      <text class='sub_head'>SUMMER SALES</text>
+  </view>
+  <view class='news'>
+    <scroll-view class='news_content' scroll-x>
+      <block wx:for="{{sumUrls}}" wx:key="news">
+      <view class='news_item'>
+          <image src="{{item.pic}}" class="news-image"/>
+      </view>
+      </block>
+    </scroll-view>
+  </view>
+</view>

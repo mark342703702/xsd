@@ -1,0 +1,9 @@
+/* pages/contact/contact.wxss */
+.location{
+  width: 100%;
+  height: 500rpx;
+}
+
+.contact {
+    padding: 40rpx 40rpx 40rpx 40rpx;
+}
