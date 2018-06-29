@@ -1,13 +1,49 @@
 <!--pages/contact/contact.wxml-->
 <view class="container">
-  <view class="location">
-     <map style="width: 100%; height: 500rpx;" latitude="{{latitude}}" longitude="{{longitude}}" markers="{{markers}}" scale="{{scale}}"></map>
+  <view class="head">
+    <view class='store_name'>小时代</view>
+    <view class='loca_name'>花园市场店</view>
+    <view class='cate_name'>购物 · 儿童服饰</view>
+    <view class='logo'>
+        <image src='../../img/logo.png' class='logo_img'></image>
+    </view>
   </view>
   <view class="contact">
-    <text>股票：838280
-    电话：0512-58161723
-    传真：0512-58161711
-    地址：江苏省苏州市张家港市滨河路2号 
-    华东国际大厦5F</text>
+    <zan-cell-group>
+      <zan-cell title="绵阳市涪城区花园批发市场B区二楼4号" is-link class="item" bindtap="getLocation">
+        <zan-icon slot="icon" type="location"></zan-icon>
+      </zan-cell>
+      <zan-cell title="周一至周日 8:30 - 18:00" class="item">
+        <zan-icon slot="icon" type="clock"></zan-icon>
+      </zan-cell>
+      <zan-cell title="13981166678" class="item" is-link bindtap="phoneCall" data-reply-phone="13981166678" >
+        <zan-icon slot="icon" type="phone"></zan-icon>
+      </zan-cell>
+      <zan-cell title="门店照片" class="item">
+        <zan-icon slot="icon" type="home"></zan-icon>
+      </zan-cell>
+    </zan-cell-group>
+  </view>
+  <view class="img">
+     <zan-row>
+      <zan-col col="7">
+        <image src='http://dimg05.c-ctrip.com/images/fd/tg/g2/M00/A2/17/Cghzf1S1ViKAH5kqAACkplaLOWk177_C_300_300_Q80.jpg' 
+        class='store_img' bindtap="getInfo"
+        data-src='http://dimg05.c-ctrip.com/images/fd/tg/g2/M00/A2/17/Cghzf1S1ViKAH5kqAACkplaLOWk177_C_300_300_Q80.jpg'>
+        </image>
+      </zan-col>
+      <zan-col col="7" offset="1">
+        <image src='http://img.360500.com/2014/36/55744/small/1403060913133296.jpg' 
+        class='store_img' bindtap="getInfo" 
+        data-src='http://img.360500.com/2014/36/55744/small/1403060913133296.jpg'>
+        </image>
+      </zan-col>
+      <zan-col col="7" offset="1">
+        <image src='http://www.glosspp.com/uploads/allimg/1604/1459855417_1917813613.jpg'
+        class='store_img' bindtap="getInfo" 
+        data-src='http://www.glosspp.com/uploads/allimg/1604/1459855417_1917813613.jpg'>
+        </image>
+      </zan-col>
+    </zan-row>  
   </view>
 </view>

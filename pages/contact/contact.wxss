@@ -1,9 +1,61 @@
 /* pages/contact/contact.wxss */
-.location{
+
+.head{
   width: 100%;
-  height: 500rpx;
+  height: 230rpx;
+  /* border-bottom: 1px dotted #bcb4b8; */
+  position: relative;
+  margin-bottom: 40rpx;
+  padding: 0px 15px;
 }
 
-.contact {
-    padding: 40rpx 40rpx 40rpx 40rpx;
+.store_name{
+  font-size: 50rpx;
+  font-weight: 500;
 }
+
+.loca_name{
+  font-size: 46rpx;
+  font-weight: 500;
+  margin-bottom: 10rpx;
+}
+
+.cate_name{
+  font-size: 24rpx;
+  color: #bcb4b8;
+}
+
+.logo{
+  position: absolute;
+  top: 40rpx;
+  right: 100rpx;
+}
+
+.logo_img{
+  width: 80rpx;
+  height: 80rpx;
+}
+
+.contatc{
+  width: 100%;
+}
+
+.contact .item{
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 100%;
+}
+
+.img{
+  padding: 10rpx 15px;
+}
+
+.store_img{
+  width: 100%;
+  height: 201.25rpx;
+  margin-bottom: 20rpx;
+}
+
+
+

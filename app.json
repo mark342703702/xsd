@@ -1,12 +1,33 @@
 {
   "pages": [
+    "pages/index/index",
     "pages/contact/contact",
-    "pages/index/index"
+    "pages/show/show"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "首页",
     "navigationBarTextStyle": "black"
+  },
+  "tabBar" : {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text" : "首页",
+        "iconPath" : "./img/home.png",
+        "selectedIconPath" : "./img/home_active.png"
+      },
+      {
+        "pagePath": "pages/contact/contact",
+        "text": "联系我们",
+        "iconPath": "./img/contact.png",
+        "selectedIconPath": "./img/contact_active.png"
+      }
+    ],
+    "color" : "#b5adad",
+    "backgroundColor" : "#fff",
+    "borderStyle" : "white",
+    "selectedColor" : "#000"
   }
 }
