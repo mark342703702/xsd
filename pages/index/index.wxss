@@ -12,6 +12,7 @@
 .title{
   width: 100%;
   padding: 40rpx 30rpx 10rpx 30rpx;
+  background: #fff;
 }
 
 .head{
@@ -31,6 +32,8 @@
 .news_content{
   white-space: nowrap;
   display: flex;
+  background: #fff;
+  padding-bottom: 20rpx;
 }
 
 .news_item{
@@ -55,7 +58,9 @@
   display: flex;
   flex-wrap: wrap;
   align-content: space-between;
-  padding: 0rpx 30rpx 10rpx 30rpx;
+  padding: 0rpx 30rpx 20rpx 30rpx;
+  background: #fff;
+  margin-bottom: 20rpx;
 }
 
 .column{
@@ -67,4 +72,8 @@
 .hot_image{
   width: 340rpx;
   height: 510rpx;
+}
+
+.container{
+  background: #ebe8ea;
 }
