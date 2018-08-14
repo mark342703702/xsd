@@ -5,12 +5,9 @@ const app = getApp()
 Page({
   data: {
     imgUrls : [
-      { 'pic': '../../img/ad2.jpg', 'link': '../../pages/contact/contact'},
-      { 'pic': '../../img/ad3.jpg', 'link': '../../pages/contact/contact' }
+      { 'pic': 'http://localhost:3000/wx/images/ad2.jpg', 'link': '../../pages/contact/contact'},
+      { 'pic': 'http://localhost:3000/wx/images/ad3.jpg', 'link': '../../pages/contact/contact' }
     ],
-    autoplay: true,
-    interval: 5000,
-    duration: 500,
     newsUrls : [
       { 'pic': '../../img/pro1.jpg'},
       { 'pic': '../../img/pro2.jpg' },

@@ -1,5 +1,5 @@
 /**app.wxss**/
-@import './dist/index.wxss';
+@import "/dist/common/index.wxss";
 .container {
   display: flex;
   flex-direction: column;
